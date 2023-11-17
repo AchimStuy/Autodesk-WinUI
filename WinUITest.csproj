@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <TargetFramework>net6.0-windows10.0.19041.0</TargetFramework>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <RootNamespace>WinUITest</RootNamespace>
+    <RuntimeIdentifiers>win10-x64</RuntimeIdentifiers>
+    <UseWinUI>true</UseWinUI>
+    <!--<UseWPF>true</UseWPF>-->
+    <!--<WindowsAppSdkBootstrapInitialize>true</WindowsAppSdkBootstrapInitialize>-->
+    <!--<WindowsAppSDKBootstrapAutoInitializeOptions_OnError_DebugBreak>true</WindowsAppSDKBootstrapAutoInitializeOptions_OnError_DebugBreak>-->
+    <WindowsPackageType>None</WindowsPackageType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="BlankWindow1.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoCAD.NET" Version="25.0.0-V028" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.4.231008000" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="BlankWindow1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+</Project>
