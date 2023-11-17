@@ -19,7 +19,7 @@
 
   <ItemGroup>
     <PackageReference Include="AutoCAD.NET" Version="25.0.0-V028" />
-    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.4.231008000" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.4.231115000" />
   </ItemGroup>
 
   <ItemGroup>
