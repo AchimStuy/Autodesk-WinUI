@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using Autodesk.AutoCAD.Runtime;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Hosting;
-using Microsoft.Windows.ApplicationModel.DynamicDependency;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -20,15 +19,6 @@ namespace WinUITest
     {
         public void Initialize()
         {
-            Autodesk.AutoCAD.ApplicationServices.Core.Application.DocumentManager.CurrentDocument.Editor.WriteMessage("Initializing WinUITest...\n");
-            try
-            {
-                Bootstrap.Initialize(0x00010004);
-            }
-            catch (System.Exception exc)
-            {
-                Autodesk.AutoCAD.ApplicationServices.Core.Application.DocumentManager.CurrentDocument.Editor.WriteMessage(exc.ToString() + "\n");
-            }
         }
 
         [CommandMethod(nameof(ShowWinUI))]

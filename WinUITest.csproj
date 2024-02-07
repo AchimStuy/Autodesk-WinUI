@@ -8,8 +8,7 @@
     <RuntimeIdentifiers>win10-x64</RuntimeIdentifiers>
     <UseWinUI>true</UseWinUI>
     <!--<UseWPF>true</UseWPF>-->
-    <!--<WindowsAppSdkBootstrapInitialize>true</WindowsAppSdkBootstrapInitialize>-->
-    <!--<WindowsAppSDKBootstrapAutoInitializeOptions_OnError_DebugBreak>true</WindowsAppSDKBootstrapAutoInitializeOptions_OnError_DebugBreak>-->
+    <WindowsAppSDKBootstrapAutoInitializeOptions_OnPackageIdentity_NoOp>true</WindowsAppSDKBootstrapAutoInitializeOptions_OnPackageIdentity_NoOp>
     <WindowsPackageType>None</WindowsPackageType>
   </PropertyGroup>
 
