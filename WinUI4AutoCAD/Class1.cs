@@ -7,16 +7,16 @@ using Microsoft.Windows.ApplicationModel.DynamicDependency;
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
 
-[assembly: ExtensionApplication(typeof(WinUITest.Class1))]
-[assembly: CommandClass(typeof(WinUITest.Class1))]
+[assembly: ExtensionApplication(typeof(WinUI4AutoCAD.Class1))]
+[assembly: CommandClass(typeof(WinUI4AutoCAD.Class1))]
 
-namespace WinUITest
+namespace WinUI4AutoCAD
 {
     public class Class1 : IExtensionApplication
     {
         public void Initialize()
         {
-            Autodesk.AutoCAD.ApplicationServices.Core.Application.DocumentManager.CurrentDocument.Editor.WriteMessage("Initializing WinUITestttt...\n");
+            Autodesk.AutoCAD.ApplicationServices.Core.Application.DocumentManager.CurrentDocument.Editor.WriteMessage("Initializing WinUI4AutoCADttt...\n");
             try
             {
                 Bootstrap.Initialize(0x00010004, "", new PackageVersion(0x0FA0043A08D30000), Bootstrap.InitializeOptions.OnPackageIdentity_NOOP);
